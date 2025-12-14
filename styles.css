@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    max-width: 900px;
+    padding: 20px;
+}
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgb(103, 58, 14);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+/* Hover effect for navigation links */
+a:hover {
+    color: rgb(23, 108, 2);
+}
+nav a:hover {
+    color:antiquewhite;
+}
+/* Specific Element Styles */
+h1 {
+    color: rgb(237, 198, 170);
+}
+h2{
+    color: darkblue;
+    text-align: center;
+}
+h3 {
+    color: rgb(100, 56, 56);
+}
+/* Profile Section Styles */
+.profilepicture {
+    width: 350px;
+    height: 400px;
+    border-radius: 20%;
+}
+.profile {
+    display: grid;
+    grid-template-areas: 
+        "heading heading"
+        "content image";
+    gap: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.profile h2 {
+    grid-area: heading;
+    text-align: center;
+}
+
+.profile p {
+    grid-area: content;
+}
+
+.profile img {
+    grid-area: image;
+    align-self: start;
+}
+/*Resources section styles*/
+.resources {
+    background-color: rgb(240, 230, 220);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+/*list styles*/
+ul{
+    list-style-type: square;
+    text-align: left;
+}
+/*creating my button for the links at the bottom of each page*/
+.forward-button, .backward-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(103, 58, 14);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.forward-button:hover, .backward-button:hover {
+    color: antiquewhite;
+}
